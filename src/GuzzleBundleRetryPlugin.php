@@ -34,7 +34,7 @@ class GuzzleBundleRetryPlugin extends Bundle implements PluginInterface
             ->canBeEnabled()
             ->children()
                 ->scalarNode('retry_enabled')
-                ->defaultTrue()
+                ->defaultFalse()
             ->end()
                 ->scalarNode('max_retry_attempts')
                 ->defaultValue(10)
